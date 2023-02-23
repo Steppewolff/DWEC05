@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="../imatges/logo-cifp.ico"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/borsa.css">
+   <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/canviContrasenya.js"></script>
+    <title>Borsa de treball: Restablir contrasenya</title>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <a href="http://www.paucasesnovescifp.cat"><img src="../imatges/logo-cifp.svg" height="75" width="55"
+                                                        class="pull-left"></a>
+        <h2><a href="../index.html">Borsa de treball</a> <small><a href="http://www.paucasesnovescifp.cat">CIFP
+            Pau Casesnoves</a></small></h2>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">UT5</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" id="barra">
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a href="../index.html"><span class="glyphicon glyphicon-log-out"></span> Tornar a l'índex</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Restablir contrasenya</h2>
+
+            <div class="well">
+                <form id="fCanvi" method="GET" action="../repGet.html">
+                    <input type="hidden" name="idUsuari" value="1">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group required">
+                                <label for="nou" class="control-label">Contrasenya nova:</label>
+                                <input type="password" class="form-control" id="nou" name="nou" required="required"
+                                       minlength="8"
+                                       maxlength="75">
+                            </div>
+                            <div class="form-group required">
+                                <label for="repetir" class="control-label">Repetir contrasenya nova:</label>
+                                <input type="password" class="form-control" id="repetir" required="required"
+                                       minlength="8"
+                                       maxlength="75">
+                            </div>
+                        </div><!--col-->
+                        <div class="col-md-8">
+                            <p>La contrasenya ha de cumplir les següents condicions: </p>
+                            <ul>
+                                <li>Ha de tenir una longitud major o igual a 8 caràcters.</li>
+                                <li>Els caràcters vàlids són
+                                    <ul>
+                                        <li>lletres majúscules</li>
+                                        <li>lletres minúscules</li>
+                                        <li>dígits</li>
+                                        <li>i els caràcters _ - $ & % @</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!--Row -->
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-success">Canviar</button>
+                            <button type="reset" class="btn btn-default">Netejar</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="notes">Els camps marcats amb <span class="vermell">*</span> són obligatoris.</p>
+                        </div><!--col -->
+                    </div> <!--Row -->
+                </form>
+            </div>
+
+        </div><!--col-->
+
+    </div><!--row-->
+
+
+    <div class="well">&copy; Centre Integrat de Formació Professional Pau Casesnoves <span
+            class="pull-right">Telèfon: <a href="tel:971881710">971 881 710</a> Correu electrònic: <a
+            href="mailto:orientacio@iespaucasesnoves.cat">orientacio@paucasesnovescifp.cat</a></span></div>
+</div><!--Contenidor -->
+<script type="module">
+    import generaMenu from "../js/menu.js";
+
+    generaMenu(2);
+</script>
+</body>
+</html>
